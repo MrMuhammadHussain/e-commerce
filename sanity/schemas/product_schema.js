@@ -32,7 +32,7 @@ export const product = defineType({
         {
             name : "price",
             title : "Price",
-            type : "number", 
+            type : "number",
         }
     ]
 
