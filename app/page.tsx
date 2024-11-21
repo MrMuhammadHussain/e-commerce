@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <>
-    <h1 className="underline">Hello World !</h1>
+    <h1 className="underline flex justify-center">Hello World !</h1>
     
     </>
   );
