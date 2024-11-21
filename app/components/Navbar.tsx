@@ -1,15 +1,15 @@
+import Link from "next/link";
 import { PiShoppingCartBold } from "react-icons/pi";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[80px] bg-white border-b">
-        <div className="max-w-[1024px] m-auto w-full h-full border flex items-center justify-between ">
-            <h1>Shoopp</h1>
-            <div>
-              <span>
+    <div className="w-full h-[80px] bg-white">
+        <div className="container w-full h-full  flex items-center justify-between ">
+            <Link href="/" className="font-urbanist font-black text-2xl ">Shoopp</Link>
+            <button className="relative text-[22px] ">
               <PiShoppingCartBold />
-              </span>
-            </div>
+              <span className="cart-item-qty ">0</span>
+            </button>
 
         </div>
     </div>
