@@ -7,8 +7,7 @@ const Navbar = () => {
             <h1>Shoopp</h1>
             <div>
               <span>
-            <PiShoppingCartBold />
-
+              <PiShoppingCartBold />
               </span>
             </div>
 
