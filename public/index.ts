@@ -1,5 +1,5 @@
-import Baner from './Baner.png';
+import Banner from './Banner.png';
 import HeroImage from './Hero-image.png';
 
-export { Baner, HeroImage}
+export { Banner, HeroImage}
 
