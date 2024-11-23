@@ -8,7 +8,7 @@ const Hero = () => {
 
   const variants1 = {
     hidden: { x: 0, y: -5, opacity: 0.25 },
-    visible: { x: 0, y: 10, opacity: 1, transition: { delay: 0.1 } },
+    visible: { x: 0, y: 10, opacity: 1, transition: { delay: 0.05 } },
 
   }
   const variants2 = {
