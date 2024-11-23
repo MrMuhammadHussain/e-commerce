@@ -1,3 +1,5 @@
+// This is the bolierplate Code for Motion&Animation
+
 import { motion } from "framer-motion"
 
  () => {
