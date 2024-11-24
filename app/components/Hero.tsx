@@ -7,8 +7,8 @@ import { motion } from "framer-motion"
 const Hero = () => {
 
   const variants1 = {
-    hidden: { x: 0, y: -5, opacity: 0.25 },
-    visible: { x: 0, y: 10, opacity: 1, transition: { delay: 0.05 } },
+    hidden: { x: 0, y: -5, opacity: 0 },
+    visible: { x: 0, y: 10, opacity: 1, transition: { delay: 0.2 } },
 
   }
   const variants2 = {
