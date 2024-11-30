@@ -15,7 +15,7 @@ const Card = ({product}:any) => {
                     className="object-cover h-32 mx-auto m-2 "
                 />
                 <div className="text-center py-4 drop-shadow-sm">
-                    <h1 className="font-bold text-2xl text-gray-950">{product.name}</h1>
+                    <h1 className="font-bold text-2xl text-gray-800">{product.name}</h1>
                     <h1 className="text-xl text-gray-700 font-bold">$ {product.price}</h1>
 
                 </div>
