@@ -5,9 +5,21 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image"
 import Link from "next/link";
 import Card from "./Card";
+import { Result } from "postcss";
 
 const Products  = async () => {
     const products = await client.fetch (groq `*[_type=="product"]`)
+
+    function getRandomItems(arr: any[], count: number): any[] {
+        const result = [];
+        for (let i = 0; i < count; i++) {
+          const randomIndex = Math.floor(Math.random() * arr.length);
+          result.push(arr.splice(randomIndex, 1)[0]);
+        }
+        return result;
+      }
+      const randomProdust = getRandomItems(products,4)
+
 
 
   return (
@@ -22,20 +34,16 @@ const Products  = async () => {
 
 
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 overflow-hidden p-10">
-                {(products|| []).slice(0,4).map((product:any,index:number) =>(
+                {(randomProdust|| []).map((product:any,index:number) =>(
                 <Card  product={product} key={index} />
 
                     
                 ))
                 }
-                
-
-            </div>
-
-        </div>
         
 
-
+            </div>
+        </div>
     </div>
   )
 }
