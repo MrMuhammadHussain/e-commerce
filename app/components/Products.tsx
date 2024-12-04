@@ -1,11 +1,6 @@
-import Image from "next/image"
 import {groq} from "next-sanity"
 import { client } from "@/sanity/lib/client";
-// import { urlForImage } from "@/sanity/lib/image";
-import { urlFor } from "@/sanity/lib/image"
-import Link from "next/link";
 import Card from "./Card";
-import { Result } from "postcss";
 
 const Products  = async () => {
     const products = await client.fetch (groq `*[_type=="product"]`)
@@ -34,7 +29,7 @@ const Products  = async () => {
 
 
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 overflow-hidden p-10">
-                {(randomProdust|| []).map((product:any,index:number) =>(
+                {(randomProdust || []).map((product:any,index:number) =>(
                 <Card  product={product} key={index} />
 
                     
