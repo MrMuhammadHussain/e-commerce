@@ -12,7 +12,7 @@ const Card = ({product}:any) => {
                     alt={product.slug}
                     width={150}
                     height={100}
-                    className="object-cover h-32 mx-auto m-2 "
+                    className="object-contain h-28 mx-auto m-2 "
                 />
                 <div className="text-center py-4 drop-shadow-sm">
                     <h1 className="font-bold text-2xl text-gray-800">{product.name}</h1>

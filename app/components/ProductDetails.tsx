@@ -18,22 +18,22 @@ const ProductDetails = ({ product }: any) => {
             <Image
               loader={() => urlFor(product.image[index]).url()}
               src={urlFor(product.image[index]).url()}
-              height={350}
-              width={350}
+              height={300}
+              width={300}
               alt={product.name}
               className="object-cover mx-auto" />
           </div>
           {/* Bottom */}
-          <div className="flex gap-5 justify-center">
+          <div className="flex gap-2 justify-center  ">
             {
               product.image?.map((item: any, i: number,) => (
                 <Image
                   loader={() => urlFor(product.image[i]).url()}
                   src={urlFor(product.image[i]).url()}
-                  height={220}
-                  width={100}
+                  height={180}
+                  width={120}
                   alt={product.name}
-                  className="object-cover mx-auto h-32 border rounded-xl hover:cursor-pointer" key={i}
+                  className="object-contain mx-auto h-32 w-1/4 border rounded-xl hover:cursor-pointer p-2" key={i}
                   onClick={() => setIndex(i)}
                 />
               ))
