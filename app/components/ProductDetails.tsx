@@ -18,8 +18,8 @@ const ProductDetails = ({ product }: any) => {
             <Image
               loader={() => urlFor(product.image[index]).url()}
               src={urlFor(product.image[index]).url()}
-              height={300}
-              width={300}
+              height={280}
+              width={320}
               alt={product.name}
               className="object-cover mx-auto" />
           </div>
