@@ -51,9 +51,9 @@ const ProductDetails = ({ product }: any) => {
           <div className="flex gap-2 items-center ">
             <h3>Quantity</h3>
             <p className="flex items-center p-[6px] gap-8 border border-black ">
-              <span className="text-red-700 "><AiOutlineMinus /></span>
+              <span className="text-red-700 cursor-pointer"><AiOutlineMinus /></span>
               <span className="text-[20px]">2</span>
-              <span className="text-green-700"><AiOutlinePlus /></span>
+              <span className="text-green-700 cursor-pointer "><AiOutlinePlus /></span>
             </p>
 
           </div>
