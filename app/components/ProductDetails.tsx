@@ -24,7 +24,7 @@ const ProductDetails = ({ product }: any) => {
               className="object-cover mx-auto" />
           </div>
           {/* Bottom */}
-          <div className="flex gap-2 justify-center  ">
+          <div className="flex gap-2 justify-center">
             {
               product.image?.map((item: any, i: number,) => (
                 <Image
