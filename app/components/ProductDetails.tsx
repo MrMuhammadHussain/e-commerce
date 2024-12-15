@@ -52,7 +52,7 @@ const ProductDetails = ({ product }: any) => {
             <h3>Quantity</h3>
             <p className="flex items-center p-[6px] gap-8 border border-black ">
               <span className="text-red-700 cursor-pointer"><AiOutlineMinus /></span>
-              <span className="text-[20px]">2</span>
+              <span className="text-[20px]">1</span>
               <span className="text-green-700 cursor-pointer "><AiOutlinePlus /></span>
             </p>
 
