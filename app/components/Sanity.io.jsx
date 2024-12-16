@@ -1,11 +1,11 @@
 //Get the Data from Sanity.io and Show at web UI.
 
 import Image from "next/image"
-import {groq} from "next-sanity"
+import { groq } from "next-sanity"
 import { client } from "@/sanity/lib/client";
-      // import { urlForImage } from "@/sanity/lib/image";
+// import { urlForImage } from "@/sanity/lib/image";
 import { urlFor } from "@/sanity/lib/image"
-    
+
 //     const Products  = async () => {
 //         const products = await client.fetch (groq `*[_type=="product"]`)
 //         <div className="border border-black mt-6">

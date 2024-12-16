@@ -9,7 +9,7 @@ const ProductDetails = ({ product }: any) => {
   const [index, setIndex] = useState(0)
   return (
     <div className="w-full md:py-16">
-      <div className="gap-8 md:max-w-[1024px] m-auto max-w-[600px] px-4 md:px-0 grid md:grid-cols-2 grid-cols-1 ">
+      <div className="gap-8 md:max-w-[1024px] m-auto max-w-[600px] px-4 md:px-0 grid md:grid-cols-2 grid-cols-1">
 
         {/* left */}
         <div>

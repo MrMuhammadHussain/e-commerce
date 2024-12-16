@@ -6,4 +6,4 @@ import ProductDetails from "./ProductDetails";
 
 
 
-export {Navbar , Hero, Products, ProductDetails, }
+export { Navbar, Hero, Products, ProductDetails, }

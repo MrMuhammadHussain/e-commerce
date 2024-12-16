@@ -28,8 +28,8 @@ const Products = async () => {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 overflow-hidden p-10">
             {(randomProdust || []).map((product: any, index: number) => (
               <Card product={product} key={index} />
-              ))
-              }
+            ))
+            }
           </div>
         </div>
       </div>
