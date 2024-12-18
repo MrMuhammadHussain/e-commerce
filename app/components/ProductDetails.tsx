@@ -3,10 +3,13 @@
 import { urlFor } from "@/sanity/lib/image"
 import Image from "next/image"
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { CartContext } from "../context/CartContext"
+
 
 const ProductDetails = ({ product }: any) => {
   const [index, setIndex] = useState(0)
+  const { qty , setQty}: any = useContext(CartContext)
   return (
     <div className="w-full md:py-16">
       <div className="gap-8 md:max-w-[1024px] m-auto max-w-[600px] px-4 md:px-0 grid md:grid-cols-2 grid-cols-1">
@@ -52,7 +55,7 @@ const ProductDetails = ({ product }: any) => {
             <h3>Quantity</h3>
             <p className="flex items-center p-[6px] gap-8 border border-black ">
               <span className="text-red-700 cursor-pointer"><AiOutlineMinus /></span>
-              <span className="text-[20px]">1</span>
+              <span className="text-[20px]">{qty}</span>
               <span className="text-green-700 cursor-pointer "><AiOutlinePlus /></span>
             </p>
 
